@@ -5,16 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tienda de Ropa</title>
   <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
-    header { background: #000; color: #fff; padding: 1rem; text-align: center; }
-    .container { padding: 2rem; }
-    .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
-    .producto { background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem; text-align: center; }
-    .producto img { width: 100%; border-radius: 10px; height: auto; }
-    .producto h3 { margin: 0.5rem 0; }
-    .producto p { margin: 0.3rem 0; }
-    footer { background: #000; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
-    .boton { display: inline-block; padding: 0.5rem 1rem; background: #000; color: white; text-decoration: none; border-radius: 5px; margin-top: 0.5rem; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff7f0;
+    }
+    header {
+      background: #d8578c;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .producto:hover {
+      transform: scale(1.03);
+    }
+    .producto img {
+      width: 100%;
+      border-radius: 15px;
+      height: auto;
+    }
+    .producto h3 {
+      margin: 0.5rem 0;
+      font-weight: bold;
+      color: #333;
+    }
+    .producto p {
+      margin: 0.3rem 0;
+      color: #555;
+    }
+    footer {
+      background: #d8578c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .boton {
+      display: inline-block;
+      padding: 0.7rem 1.2rem;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 0.7rem;
+      transition: background 0.3s;
+    }
+    .boton:hover {
+      background: #d8578c;
+    }
   </style>
 </head>
 <body>
@@ -22,7 +78,7 @@
     <h1>Tienda de Ropa Femenina</h1>
   </header>
   <div class="container">
-    <h2>Productos Destacados</h2>
+    <h2 style="color:#d8578c">Productos Destacados</h2>
     <div class="productos">
       <!-- Productos se insertan aquí -->
       <div class="producto">
@@ -46,3 +102,4 @@
   </footer>
 </body>
 </html>
+
