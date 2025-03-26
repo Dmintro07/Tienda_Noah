@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda de Ropa</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f8f8; }
+    header { background: #000; color: #fff; padding: 1rem; text-align: center; }
+    .container { padding: 2rem; }
+    .productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .producto { background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 1rem; text-align: center; }
+    .producto img { width: 100%; border-radius: 10px; height: auto; }
+    .producto h3 { margin: 0.5rem 0; }
+    .producto p { margin: 0.3rem 0; }
+    footer { background: #000; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+    .boton { display: inline-block; padding: 0.5rem 1rem; background: #000; color: white; text-decoration: none; border-radius: 5px; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda de Ropa Femenina</h1>
+  </header>
+  <div class="container">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <!-- Productos se insertan aquí -->
+      <div class="producto">
+        <img src="https://drive.google.com/uc?export=view&id=1N3dONuQnAvUQ3-lJPxGnVUkU3nbWWFUC" alt="Producto 1">
+        <h3>Blusa Blanca</h3>
+        <p>S/ 35.00</p>
+        <a class="boton" href="https://wa.me/51904463970?text=Hola!%20Quiero%20comprar%20la%20Blusa%20Blanca">Comprar por WhatsApp</a>
+      </div>
+      <div class="producto">
+        <img src="https://drive.google.com/uc?export=view&id=1qN9PH2ZrT6RtOwQdOvMQThGG8Q6qzblG" alt="Producto 2">
+        <h3>Pantalón Jeans</h3>
+        <p>S/ 55.00</p>
+        <a class="boton" href="https://wa.me/51904463970?text=Hola!%20Quiero%20comprar%20el%20Pantal%C3%B3n%20Jeans">Comprar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>Medios de pago: Yape / Plin</p>
+    <p>Contáctanos por WhatsApp: 904 463 970</p>
+    <p>&copy; 2025 - Tienda de Ropa</p>
+  </footer>
+</body>
+</html>
