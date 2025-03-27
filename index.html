@@ -12,18 +12,13 @@
       padding: 0;
       background: #fff7f0;
     }
-    header {
-      background: #fff7f0;
-      text-align: center;
-      padding: 1rem;
-    }
-    header img {
-      max-height: 120px;
-    }
     nav {
       background: #d8578c;
       padding: 0.5rem;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -42,6 +37,7 @@
       margin-top: 3rem;
       font-family: 'Dancing Script', cursive;
       font-size: 2rem;
+      text-align: center;
     }
     .productos {
       display: grid;
@@ -80,9 +76,6 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="QUIERO MÁS">
-  </header>
   <nav>
     <a href="index.html">Inicio</a>
     <a href="vestidos.html">Vestidos</a>
@@ -113,4 +106,5 @@
   </footer>
 </body>
 </html>
+
 
